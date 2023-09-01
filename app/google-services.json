@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "683301000699",
+    "project_id": "pc-simulator-ada56",
+    "storage_bucket": "pc-simulator-ada56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683301000699:android:cc11acd0b548395597a75e",
+        "android_client_info": {
+          "package_name": "com.example.pcsimulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683301000699-7pqh62tm959il2u0c6513f5tb6no5ve7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMBgEvVbavd2HftYRNlqnvb0qibIehI9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683301000699-7pqh62tm959il2u0c6513f5tb6no5ve7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

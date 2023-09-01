@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat_fragments.Chat5Fragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nestedScrollView"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout"
+            android:descendantFocusability="blocksDescendants">
+
+            <RelativeLayout
+                android:id="@+id/client_message1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:background="@drawable/chat_client_message_bg"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="Hi, I need a new computer."
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/me_message1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/chat_me_message_bg"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/client_message1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="Good. Do you have any preferences"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/client_message2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:background="@drawable/chat_client_message_bg"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/me_message1">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="Yes."
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="Motherboard: ASRock H310CM-DVS
+                    \nVideocard: Sapphire PULSE AMD Radeon RX 6400
+                    \nCPU: AMD Ryzen 5 5600X
+                    \nCase: AeroCool Cylon
+                    \nSSD: Samsung 870
+                    \nHDD: Seagate Barra Cuda 2TB
+                    \nRAM: Apacer
+                    \nPower Supply: DEEPCOOL PF600
+                    \nCooling: DEEPCOOL GAMMAX 300"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/buttons"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/client_message2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/NotCapsButton"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chat_1_order_accept_btn"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/chat_buttons"
+                    android:backgroundTint="#8BC34A"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="Accept"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/NotCapsButton"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/chat_1_order_deliver_btn"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/chat_buttons"
+                    android:backgroundTint="#8BC34A"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="Deliver"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/NotCapsButton"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chat_1_order_deny_btn"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/chat_buttons"
+                    android:backgroundTint="#F44336"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="Deny"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
